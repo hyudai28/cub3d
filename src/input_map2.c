@@ -52,8 +52,8 @@ int	input_color(char *line, t_info *info, int fl_or_clg)
 
 void	set_direction(t_info *info, int posX, int posY, char direction)
 {
-	info->posX = (double)(posY);
-	info->posY = (double)(posX);
+	info->posX = (double)(posY) + 0.5;
+	info->posY = (double)(posX) + 0.5;
 	if (direction == 'N')
 	{
 		info->dirX = 1;
