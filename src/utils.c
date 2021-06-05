@@ -64,7 +64,6 @@ void	load_texture(t_info *info)
 int	push_exit(t_info *info)
 {
 	(void)info;
-	system("leaks cub3D");
 	printf("you click esc, bye!\n");
 	exit(0);
 }

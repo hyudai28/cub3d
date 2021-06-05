@@ -21,7 +21,6 @@ int	key_press(int key, t_info *info)
 {
 	if (key == K_ESC)
 	{
-		system("leaks cub3D");
 		exit(0);
 	}
 	else if (key == K_W)

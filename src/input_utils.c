@@ -22,7 +22,6 @@ int	skip_spaces(char *str, int index)
 void	map_error(void)
 {
 	printf("map_error\n");
-	system("leaks cub3D");
 	exit(1);
 }
 
@@ -69,7 +68,6 @@ void	free_flood(t_info *info, t_count *w_h)
 	free(info->map);
 	free(info->spritex);
 	free(info->spritey);
-	system("leaks a.out");
 	exit(1);
 }
 
