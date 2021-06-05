@@ -24,7 +24,7 @@ t_draw_wall	draw_setup(t_info *info, t_w_hit wh,
 {
 	dw = (t_draw_wall){0};
 	dw.lineHeight = (int)(info->s_height / wh.perpWallDist);
-	if (dw.lineHeight < 0)
+	if (dw.lineHeight < 0 || dw.lineHeight > 50000)
 		dw.lineHeight = 961;
 	dw.drawStart = -dw.lineHeight / 2 + info->s_height / 2;
 	if (dw.drawStart < 0)
