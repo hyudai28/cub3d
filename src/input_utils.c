@@ -6,7 +6,7 @@
 /*   By: hyudai <hyudai@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 20:17:14 by hyudai            #+#    #+#             */
-/*   Updated: 2021/06/04 22:09:38 by hyudai           ###   ########.fr       */
+/*   Updated: 2021/06/08 22:58:02 by hyudai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ int	skip_spaces(char *str, int index)
 
 void	map_error(void)
 {
+	printf("Error.\n");
 	printf("map_error\n");
 	exit(1);
 }
@@ -68,6 +69,8 @@ void	free_flood(t_info *info, t_count *w_h)
 	free(info->map);
 	free(info->spritex);
 	free(info->spritey);
+	printf("Error.\n");
+	printf("map is not filled\n");
 	exit(1);
 }
 

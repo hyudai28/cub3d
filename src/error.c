@@ -6,13 +6,13 @@ int confirm_cub_file(char *line)
 	size_t	num;
 
 	num = ft_strlen(line);
-	if (line[num] == 'b' &&
-	 		line[num - 1] == 'u' &&
-	 		line[num - 2] == 'c' &&
-	 		line[num - 3] == '.')
+	if (line[num - 1] == 'b' &&
+	 		line[num - 2] == 'u' &&
+	 		line[num - 3] == 'c' &&
+	 		line[num - 4] == '.')
 			return (0);
 	printf("Error.\n");
-    printf("file is not cub file\n.");
+    printf("file is not cub file\n");
 	exit(1);
 }
 

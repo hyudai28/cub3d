@@ -6,7 +6,7 @@
 /*   By: hyudai <hyudai@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 20:16:17 by hyudai            #+#    #+#             */
-/*   Updated: 2021/06/04 22:17:54 by hyudai           ###   ########.fr       */
+/*   Updated: 2021/06/08 22:57:05 by hyudai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,7 +104,7 @@ int	map_consistency(t_info *info, t_count *w_h, int map_fd)
 	if (!w_h->N || !w_h->SO || !w_h->W || !w_h->E || !w_h->F || !w_h->C
 		|| !w_h->MAP || !w_h->PLAYER)
 	{
-		printf("The specified file has more or fewer elements.\n");
+		printf("Error.\nThe specified file has more or fewer elements.\n");
 		exit(1);
 	}
 	return (0);

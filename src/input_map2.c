@@ -6,7 +6,7 @@
 /*   By: hyudai <hyudai@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 20:16:58 by hyudai            #+#    #+#             */
-/*   Updated: 2021/06/04 19:41:04 by hyudai           ###   ########.fr       */
+/*   Updated: 2021/06/08 23:00:24 by hyudai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,12 +54,12 @@ void	set_direction(t_info *info, int posX, int posY, char direction)
 {
 	info->posX = (double)(posY) + 0.51;
 	info->posY = (double)(posX) + 0.51;
-	if (direction == 'N')
+	if (direction == 'S')
 	{
 		info->dirX = 1;
 		info->planeY = -0.66;
 	}
-	else if (direction == 'S')
+	else if (direction == 'N')
 	{
 		info->dirX = -1;
 		info->planeY = 0.66;
