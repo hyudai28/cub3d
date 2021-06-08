@@ -84,11 +84,8 @@ int	main(int argc, char **argv)
 	t_info	info;
 	t_count	w_h;
 
-	if (argc != 2)
-	{
-		printf("Please specify only one cub file.\n");
-		exit(1);
-	}
+	argc_check(argc);
+	confirm_cub_file(argv[1]);
 	info = (t_info){.s_height = 480, .s_width = 640};
 	w_h = (t_count){0};
 	info.mlx = mlx_init();

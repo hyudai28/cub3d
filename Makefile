@@ -13,10 +13,13 @@ SOURCE_FILE += $(SOURCE_DIR)/raycast_floor.c
 SOURCE_FILE += $(SOURCE_DIR)/raycast_wall.c
 SOURCE_FILE += $(SOURCE_DIR)/raycast_wall2.c
 SOURCE_FILE += $(SOURCE_DIR)/utils.c
+SOURCE_FILE += $(SOURCE_DIR)/error.c
 
 OBJECT_FILE = $(SOURCE_FILE:.c=.o)
 
 all: $(NAME)
+
+bonus: $(NAME)
 
 $(NAME) : $(OBJECT_FILE)
 			make -C libft
