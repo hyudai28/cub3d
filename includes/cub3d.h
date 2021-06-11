@@ -239,8 +239,7 @@ int				create_rgb(int R, int G, int B);
 void			setup_map(t_info *info, t_count *w_h);
 int				create_rgb(int R, int G, int B);
 
-
-int	confirm_cub_file(char *line);
-void    argc_check(int argc);
+int				confirm_cub_file(char *line);
+void			argc_check(int argc);
 
 #endif
