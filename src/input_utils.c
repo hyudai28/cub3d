@@ -22,7 +22,7 @@ int	skip_spaces(char *str, int index)
 void	map_error(void)
 {
 	printf("Error.\n");
-	printf("map_error\n");
+	printf("cubfile_error\n");
 	exit(1);
 }
 
