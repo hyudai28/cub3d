@@ -36,3 +36,34 @@ void	argc_check(int argc)
 		exit(1);
 	}
 }
+
+int	ft_strrchr_int(const char *s, int c)
+{
+	int		len;
+
+	c = (char)c;
+	len = ft_strlen(s) + 1;
+	while (len-- != 0)
+	{
+		if (s[len] == c)
+			return (len);
+	}
+	return (-1);
+}
+
+int	check_xpm_line(char *line)
+{
+	int		len_i;
+
+	len_i = ft_strrchr_int(line, '.');
+	if (len_i != -1)
+	{
+		if (line[++len_i] == 'x' &&\
+			line[++len_i] == 'p' &&\
+			line[++len_i] == 'm')
+			return (0);
+	}
+	printf("Error.\n");
+	printf("this tex is not xpm file.\n");
+	exit(1);
+}

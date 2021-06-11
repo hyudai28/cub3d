@@ -241,5 +241,7 @@ int				create_rgb(int R, int G, int B);
 
 int				confirm_cub_file(char *line);
 void			argc_check(int argc);
+int				ft_strrchr_int(const char *s, int c);
+int				check_xpm_line(char *line);
 
 #endif

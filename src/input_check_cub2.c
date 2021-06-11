@@ -17,7 +17,7 @@ int	check_xpm(char *xpm_line, int xpm_fd)
 	int		gnl_ret;
 	char	*gnl_line;
 
-	(void)xpm_line;
+	check_xpm_line(xpm_line);
 	gnl_ret = get_next_line(xpm_fd, &gnl_line);
 	while (gnl_ret)
 	{
