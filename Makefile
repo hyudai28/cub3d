@@ -19,8 +19,6 @@ OBJECT_FILE = $(SOURCE_FILE:.c=.o)
 
 all: $(NAME)
 
-bonus: $(NAME)
-
 $(NAME) : $(OBJECT_FILE)
 			make -C libft
 			$(CC) $(OBJECT_FILE) ./libft/libft.a libmlx.dylib -o $(NAME)
