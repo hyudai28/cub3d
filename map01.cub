@@ -1,8 +1,8 @@
-NO                                  ./textures/eagle.xpm
+NO ./textures/eagle.xpm
 WE ./textures/purplestone.xpm
-EA                                                                 ./textures/greystone.xpm
-SO                                   ./textures/redbrick.xpm
-F 155,0        ,      0
+EA ./textures/greystone.xpm
+SO ./textures/redbrick.xpm
+F 155,0,0
 C 0,100,100
 
 1111111111111111111111111111
